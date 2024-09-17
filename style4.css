@@ -1,0 +1,78 @@
+.container {
+  padding: 30px 22px;
+}
+
+.container .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .header h2 {
+  margin: auto;
+}
+
+.container ul li.active {
+  background-color: #fff;
+  color: rgb(4, 5, 71);
+}
+
+ul {
+  display: flex;
+  padding: 3px;
+  margin-bottom: 3px;
+  background-color: rgb(242, 242, 254);
+  border-radius: 7px;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px 15px;
+  border-radius: 7px;
+  font-weight: 600;
+  color: #8c8c8c;
+  cursor: pointer;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+  background-color: rgb(242, 242, 254);
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+
+.task .detail {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.task .detail span:first-child {
+  color: rgb(4, 5, 71);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.task .effect {
+  margin-left: auto;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+.task .high {
+  background-color: red;
+  color: white;
+}
+
+.task .medium {
+  background-color: rgb(4, 5, 71);
+  color: #fff;
+}
+
+.task .low {
+  background-color: white;
+  color: rgb(4, 5, 71);
+}

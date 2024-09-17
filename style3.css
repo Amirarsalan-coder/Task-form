@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 18px;
+}
+
+.container h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.container label {
+  font-weight: 600;
+}
+
+.container button {
+  align-self: flex-start;
+  background-color: #fff;
+  color: gray;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 9px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.container button i {
+  margin-right: 7px;
+}
+
+.container button.save-task {
+  align-self: flex-end;
+  background-color: rgb(4, 5, 71);
+  color: #fff;
+  border-radius: 9px;
+  padding: 11px 15px;
+  margin-bottom: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.container input,
+.container select {
+  border-radius: 9px;
+  padding: 8px;
+  border: 1px solid rgb(182, 182, 182);
+  font-size: 15px;
+}
+
+.container input,
+.container select {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,181 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/woff/Poppins-Light.woff") format("woff"),
+    url("../fonts/ttf/Poppins-Light.ttf") format("ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/woff/Poppins-Medium.woff") format("woff"),
+    url("../fonts/ttf/Poppins-Medium.ttf") format("ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/woff/Poppins-Regular.woff") format("woff"),
+    url("../fonts/ttf/Poppins-Regular.ttf") format("ttf");
+  font-weight: 500;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+a {
+  color: rgb(4, 5, 71);
+}
+
+span {
+  color: #8c8c8c;
+}
+
+.container {
+  box-shadow: 0px 3px 12px -1px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.left-right {
+  display: flex;
+}
+
+.left,
+.right {
+  width: 50%;
+  height: 50vh;
+}
+
+/* left */
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgb(4, 5, 71);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.left h1 {
+  padding: 15px;
+}
+
+.left p {
+  padding-left: 15px;
+  color: rgb(133, 147, 158);
+}
+
+.left h1 {
+  color: #fff;
+}
+
+/* right */
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 20px;
+}
+
+.right h1 {
+  padding-bottom: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: rgb(4, 5, 71);
+  font-family: "poppins";
+}
+
+form label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(4, 5, 71, 0.05);
+}
+
+form input {
+  padding: 8px;
+  border: none;
+  outline: none;
+  border-radius: 9px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+form > input {
+  width: 100%;
+}
+
+#check {
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+#i-cant-rem-pass {
+  margin-left: 45px;
+}
+
+.right button {
+  background-color: rgb(4, 5, 71);
+  color: #fff;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 0.9rem;
+  border-radius: 9px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+    justify-content: flex-start;
+  }
+  .container {
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .left-right {
+    flex-direction: column;
+  }
+
+  .left {
+    align-items: center;
+    padding: 30px 0;
+  }
+
+  .left,
+  .right {
+    border-radius: 0;
+    height: auto;
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
+}
