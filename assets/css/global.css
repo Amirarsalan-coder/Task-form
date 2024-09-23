@@ -58,7 +58,6 @@ span {
 .left,
 .right {
   width: 50%;
-  height: 50vh;
 }
 
 /* left */
@@ -136,7 +135,7 @@ form > input {
 }
 
 #i-cant-rem-pass {
-  margin-left: 45px;
+  display: block;
 }
 
 .right button {
